@@ -1,0 +1,26 @@
+<table>
+    <tr *ngFor="let item of alldata">
+        <div class="a">
+            <div class="x">
+              <img [src]="ss">
+              <div class="y">
+                <button type="button" class="btn btn-warning" style="height: 40px;font-size: 10px;">Edit Photo</button>
+                <button type="button" class="btn btn-warning" style="height: 40px;font-size: 10px;">Edit Profile</button>
+              </div>
+            </div>
+        </div>
+        <div class="b">
+            <div class="t">
+               <p>I'm {{item.fname}} {{item.lname}} and Im above {{item.age}} years and you can send your emails to {{item.email}}. I live in the state of {{item.state}}. I like to {{item.tag}},{{item.tag1}} and {{item.tag2}} and please send me newsletters. Please reach out to me on my phone number is {{item.phone}}.
+               </p>
+            </div>
+            <div class="o">
+                <button type="button" class="btn btn-success">I Agree</button>
+            </div>
+
+        </div>
+
+    </tr>
+
+</table>
+<router-outlet></router-outlet>

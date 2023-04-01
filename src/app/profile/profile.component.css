@@ -1,0 +1,22 @@
+img{
+    width: 174px;
+    height: 150px;
+}
+tr{
+    display: flex;
+}
+table{
+    margin: 20px;
+}
+.y{
+    display: flex;
+
+}
+.y button{
+  margin: 10px;
+  justify-content: center;
+  
+}
+.b{
+    padding: 20px;
+}

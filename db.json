@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "user":[
+    {
+      "fname":"Asta",
+      "lname":"Sharma",
+      "email":"as@gmail.com",
+      "phone":"9167576422",
+      "age":"5",
+      "state":"maha",
+      "country":"india",
+      "address":"pune",
+      "tag":"cricket",
+      "tag1":"football",
+      "tag2":"vollyball",
+      "image":"../assets/profile.jpg"
+    }
+
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

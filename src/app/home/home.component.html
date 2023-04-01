@@ -1,0 +1,90 @@
+<div class="header">
+    <img [src]="bg">
+     <div class="top-right">
+      
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link"  routerLink="" routerLinkActive="list-item-Active">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#" routerLinkActive="list-item-Active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="#" routerLinkActive="list-item-Active">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="#" routerLinkActive="list-item-Active">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="#" routerLinkActive="list-item-Active">Employees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="#" routerLinkActive="list-item-Active">Contact Us</a>
+          </li>
+         
+    </ul>
+  </div>
+  
+  <div class="centered">
+    <h2>I'm looking for..</h2>
+    <form class="d-flex me-5">
+      <div class="x">
+        <input type="text" class="form-control" placeholder="Enter a job Description">
+        <div class="col-3 offset-1">
+          <button type="button" class="btn btn-primary"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+      </div>
+    </form>
+    <div class="form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" style="color: #fdfdfd;" value="">Full Time
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" style="color: antiquewhite;" value="">Part Time / Casual / Freelance
+      </label>
+    </div>
+    
+    <select  id="xx"  name="income">
+      <option value="" disabled selected>Select your location</option>
+      <option value="income">Pune</option>
+      <option value="income">Mumbai</option>
+      <option value="other">Banglore</option>
+    </select>
+    <div class="col-4 offset-4">
+      <mat-dialog-actions>
+      <button type="button" class="btn btn-primary" (click)="openDialog()">Register</button>
+    </mat-dialog-actions>
+      <!-- <button mat-raised-button color="primary"  mat-button (click)="openDialog()" >Submit</button> -->
+    </div>
+  </div> 
+    
+</div>
+<div class="section1">
+  <h5>We're leaders in </h5>
+  <h1>Creative Digial Recruitment</h1>
+  <h1 id="q">________</h1>
+   
+  <p>Based in Surry Hills, the creative hub of sydney we are Surrounded by creativity </p>
+
+  <p id="w">and that reflects on the type of jobs we recruit for  </p>
+  <button class="btn btn-outline-primary" type="submit">FIND OUT MORE ABOUT US!</button>
+ 
+
+</div>
+<div class="section2">
+  <p>Subscribe to our job Seeker mailing List</p>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline" style="border-color: #007bff;">
+   
+      <input matInput placeholder="Enter Your Email Address" style="color:white; margin-top: 10px; padding: 1px;">
+      <mat-icon matSuffix style="color: white;">email</mat-icon>
+    </mat-form-field>
+  </form>
+</div>
+
+<!-- <div class="col-4 offset-4">
+  <button mat-raised-button color="primary"  mat-button (click)="openDialog()" >Submit</button>
+</div> -->
+<!-- <router-outlet></router-outlet> -->
