@@ -11,12 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { EditprofileComponent } from './editprofile/editprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegisterComponent,
     ProfileComponent,
+    EditprofileComponent,
 
     
   ],

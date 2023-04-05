@@ -1,11 +1,8 @@
- <div class="header">
-    <button mat-icon-button style="float: right;" matDialogClose >
-        <mat-icon style="color: aliceblue;">close</mat-icon>
-    </button>
-    <mat-dialog-content>
+
+
         <header><h2>Register</h2></header>
-    </mat-dialog-content>
-</div>
+    
+
 <div class="main" >
     <div class="a">
      <img [src]="srcc">
@@ -16,7 +13,7 @@
         <form [formGroup]="registerForm">
             <div class="row">
                 <div class="input_box col-6">
-                    <input type="text" class="form-control"  id="firstname"  formControlName="firstname" />
+                    <input type="text" class="form-control"  id="firstname"  formControlName="firstname">
                     <!-- name="fname" [(ngModel)]="userform.fname" -->
                     <label for=""> First Name</label>
                     <div class="form-text text-danger" *ngIf="FirstName.errors?.['required'] && (FirstName.touched || FirstName.dirty)" >
@@ -151,5 +148,4 @@
             </div>
         </form>
     </div>
-</div> 
-<router-outlet></router-outlet>
+

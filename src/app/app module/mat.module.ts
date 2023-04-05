@@ -9,6 +9,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
+import { NgxSliderModule } from "@angular-slider/ngx-slider";
 
 
 const material=[
@@ -21,6 +22,7 @@ const material=[
   MatInputModule,
   MatSelectModule,
   MatChipsModule,
+  NgxSliderModule
 ]
 
 @NgModule({

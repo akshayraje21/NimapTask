@@ -17,4 +17,8 @@ export class UserService {
     return this.http.get<User[]>('http://localhost:3000/user');
   }
 
+  update(payload:User){
+    return this.http.put(`http://localhost:3000/user/}`,payload);
+   }
+
 }

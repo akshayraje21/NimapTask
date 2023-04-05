@@ -1,17 +1,16 @@
-
-import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {Component, OnInit} from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import {MatChipEditedEvent, MatChipInputEvent} from '@angular/material/chips';
-import {  Router } from '@angular/router';
+import {  ActivatedRoute,Router } from '@angular/router';
 import { Options } from '@angular-slider/ngx-slider';
 import {FormControl,FormGroup,Validators} from '@angular/forms'
 import { User } from '../myinterface/user';
 import { UserService } from '../myServices/user.service';
 import { ProfileComponent } from '../profile/profile.component';
+import {COMMA, ENTER} from '@angular/cdk/keycodes';
 
 
 
-export interface Tag {
+export interface Tag  {
   name: string;
 }
 interface Address{
@@ -28,24 +27,25 @@ export interface Tag {
 }
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-editprofile',
+  templateUrl: './editprofile.component.html',
+  styleUrls: ['./editprofile.component.css']
 })
-export class RegisterComponent implements OnInit{
-  userform:User={
+export class EditprofileComponent implements OnInit {
+  userForm:User={
     id:1,
-    fname: '',
-    lname: '',
-    email: '',
-    phone: 0,
-    age: 0,
-    state: '',
-    country: '',
-    address: '',
-    tag: '',
-    tag1: '',
-    tag2: ''
+    fname:'',
+    lname:'',
+    email:'',
+    phone:123344,
+    age:1,
+    state:'',
+    country:'',
+    address:'',
+    tag:'',
+    tag1:'',
+    tag2:''
+  
   }
   dialogRef: any;
 
@@ -56,30 +56,15 @@ export class RegisterComponent implements OnInit{
     ceil: 60
   };
 
-  constructor(private userService:UserService,private router:Router){}
+  constructor(private userService:UserService,private router:Router,private route:ActivatedRoute){}
   ngOnInit(): void {
-    
+  
   }
   
   submit(){
     this.router.navigateByUrl('profile');
   }
-  create(){
-    console.log("create method called");
-    console.log(this.userform);
-    this.userService.register(this.userform)
-    .subscribe({
-      next:(data) => {
-      // this.router.navigate(["./profile"]);
-      },
-      error:(err) => {
-        console.log(err);
-      }
-    })
-  }
-
-
-
+  
 
   srcc:string='../assets/profile avtar..jpg'
 
@@ -187,6 +172,5 @@ export class RegisterComponent implements OnInit{
     // Edit existing tag
    
   }
-
 
 }
